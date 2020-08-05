@@ -1,2 +1,12 @@
 ﻿  main.cpp
+D:\training_opencv\ComputerVision\ComputerVision\main.cpp(23,93): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
+D:\training_opencv\ComputerVision\ComputerVision\main.cpp(23,60): warning C4244: 'argument': conversion from 'double' to '_Tp', possible loss of data
+          with
+          [
+              _Tp=int
+          ]
   ComputerVision.vcxproj -> D:\training_opencv\ComputerVision\x64\Debug\ComputerVision.exe
