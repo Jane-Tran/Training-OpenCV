@@ -18,7 +18,7 @@ int main()
 		Mat frame;
 		cap >> frame;
 
-		Mat grayscale;
+	 	Mat grayscale;
 		cvtColor(frame, grayscale, COLOR_BGR2GRAY);
 		resize(grayscale, grayscale, Size(grayscale.size().width / scale, grayscale.size().height / scale));
 
