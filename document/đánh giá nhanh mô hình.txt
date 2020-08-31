@@ -1,0 +1,40 @@
+Date: 20/08/2020
+Create by: tvq_huy
+
+Đánh giá lần 1:
+Bộ weight: d1908s
+
+1. Số trường hợp Nothing vẫn còn khá ít, đặc trưng của môi trường vẫn có thể kích hoạt
+mô hình không mong muốn.
+2. Đề xuất tăng độ chính xác ban đầu là: 
+	+ Nên kích hoạt khi softmax của ký tự áp đảo, đạt hơn 90% (hoặc có thể hơn 95% -98%)
+	+ Ban đầu nên xác định hơn 10 lần mới xác nhận ký tự.
+3. Độ chính xác của A khá thấp và còn nhằm lẫn với E và M, ký tự rất khó trong việc biểu diễn
+A và E khá là gần nhau trong các đặc trưng.
+4. Những chữ có độ chính xác ổn định: H, L, M, C, V
+5. Ký tự cần góc nghiên khá chính xác mới nhận dạng được, cần sử dụng Data Arguument để làm
+tăng ảnh trên nhiều góc độ
+6. R có độ chính xác khá thấp, rất hay trùng lẫn với U 
+7. W vẫn nhận dạng được nhưng độ nhạy chưa cao: có thể là do gây nhằm lẫn với V
+8. B đôi lúc cũng có lẫn lộn với U.
+9. Cần tinh chỉnh: D, R, A(1 tí)
+
+Note: 
+	+ Xét đến mục đích sử dụng thì nên sử dụng hình chụp gần, loại bỏ trường các trường hợp zoom 
+	+ Nên dùng ảnh rõ nét và không nhiễu hay nhèo vì còn phải resize xuống 64x64, có thể tính 
+	đến trường hợp upsize lên 128x128 để tăng độ chính xác (nhược điểm giảm tốc độ nhận diện)
+	
+Date: 30/08/2020
+Create by: tvq_huy
+
+Đánh giá lần 2: Mô hình đã khắc phục được một số lỗi của mô hình đầu, nhưng nảy sinh một số lỗi mới do do có vùng đặc trưng khá nhau và đặc trưng để phân biệt khá ít.
+Bộ weight: d3008
+
+1. Trường hợp Nothing đã hoạt động ổn định hơn, các vật thể dù có kích hoạt đặc trưng của một trong 
+các trường hợp còn lại cũng không vượt quá 90%
+2. Chữ A đã nhạy hơn trước rất nhiều.
+Các chữ có độ chính xác ổn định bậc 1: A, E, C, L, V, R, W, H, U (rất nhạy và độ chính xác luôn 0.999xxx)
+Các chữ có độ chính xác ổn định bậc 2: B, M, Y (tương đối nhạy và độ chính xác luôn là 0.9xxx)
+Các chữ có độ ổn định thấp: D, X (hầu như không nhận ra toàn trả về chữ R)
+
+3. Chữ D, X vẫn có thể được nhận ra với dữ liệu huấn luyện mới, nhưng độ ổn định cực kỳ thấp, hầu như bị chữ R lấn ác trong khi nhận dạng (Nguyên nhân phỏng đoán: là do 2 chữ này có vùng nhận dạng đặc trưng khá giống nhau)
