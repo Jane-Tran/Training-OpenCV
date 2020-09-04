@@ -38,3 +38,12 @@ Các chữ có độ chính xác ổn định bậc 2: B, M, Y (tương đối n
 Các chữ có độ ổn định thấp: D, X (hầu như không nhận ra toàn trả về chữ R)
 
 3. Chữ D, X vẫn có thể được nhận ra với dữ liệu huấn luyện mới, nhưng độ ổn định cực kỳ thấp, hầu như bị chữ R lấn ác trong khi nhận dạng (Nguyên nhân phỏng đoán: là do 2 chữ này có vùng nhận dạng đặc trưng khá giống nhau)
+
+Date: 04/09/2020
+Create by: tvq_huy
+
+Đánh giá mô hình lần 3: 
+1. Chữ X đã được nhận dạng khá tốt, chứ D đôi khi vẫn bị nhầm lẫn với R.
+2. Các chữ có độ ổn định cao: 
+3. Chữ V hay nhầm lẫn với chữ U (test nhanh thì hầu như ko nhận ra)
+4. 
