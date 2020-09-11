@@ -41,9 +41,19 @@ Các chữ có độ ổn định thấp: D, X (hầu như không nhận ra toà
 
 Date: 04/09/2020
 Create by: tvq_huy
+Bộ weight: 0409
 
 Đánh giá mô hình lần 3: 
-1. Chữ X đã được nhận dạng khá tốt, chứ D đôi khi vẫn bị nhầm lẫn với R.
+1. Chữ X đã được nhận dạng khá tốt, chữ D đôi khi vẫn bị nhầm lẫn với R.
 2. Các chữ có độ ổn định cao: 
 3. Chữ V hay nhầm lẫn với chữ U (test nhanh thì hầu như ko nhận ra)
-4. 
+
+Date: 08/09/2020
+Create by: tvq_huy
+Bộ weight: 0809
+
+Đánh giá mô hình lần 4:
+Sau quá trình chỉnh sửa hình ảnh với những nhận xét của Đánh giá lần 3:
+1. Loại bỏ hết những hình ảnh gây ra nhiễu cho mô hình mà mục đích ban đầu đưa vào là để làm phong phú trường hợp nhận dạng.
+2. Tận dụng hiện tượng Overfiting để tăng độ chính xác cho quá trình nhận dạng (cần xem xét lại kỹ hơn)
+3. Mô hình đã hoạt động tốt trong môi trường đủ sáng cho các cử chỉ được biểu diễn đúng.
