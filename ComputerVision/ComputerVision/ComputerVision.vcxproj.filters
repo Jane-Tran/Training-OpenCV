@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="face_dectec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
