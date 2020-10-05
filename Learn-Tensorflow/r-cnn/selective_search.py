@@ -51,9 +51,9 @@ if __name__ == "__main__":
         print("Time process: " + str(end_time - start_time))
         k = cv2.waitKey(0) & 0xFF
 
-        if k == 109:
+        if k == 109: # press l
             number_show_region += increment
-        elif k == 108:
+        elif k == 108: # press m
             number_show_region -= increment
         elif k == 113:
             break
