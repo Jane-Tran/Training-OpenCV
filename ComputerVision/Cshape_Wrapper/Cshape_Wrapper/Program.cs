@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace test_feature
+namespace Cshape_Wrapper
 {
     class Program
     {

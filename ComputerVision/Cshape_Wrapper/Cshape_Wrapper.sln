@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30413.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test_feature", "test_feature\test_feature.csproj", "{E8477F23-FBA3-4622-99F4-F49550780459}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cshape_Wrapper", "Cshape_Wrapper\Cshape_Wrapper.csproj", "{17B38F52-895E-4939-9E8A-D7B1CDAF4FA5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{E8477F23-FBA3-4622-99F4-F49550780459}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E8477F23-FBA3-4622-99F4-F49550780459}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E8477F23-FBA3-4622-99F4-F49550780459}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E8477F23-FBA3-4622-99F4-F49550780459}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17B38F52-895E-4939-9E8A-D7B1CDAF4FA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17B38F52-895E-4939-9E8A-D7B1CDAF4FA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17B38F52-895E-4939-9E8A-D7B1CDAF4FA5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17B38F52-895E-4939-9E8A-D7B1CDAF4FA5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2AC66339-F2E7-4C4B-A06F-51C365CD4167}
+		SolutionGuid = {8F5DFC96-F9BE-4274-A5CF-AF3B2176F6C6}
 	EndGlobalSection
 EndGlobal
