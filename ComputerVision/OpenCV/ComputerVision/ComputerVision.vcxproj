@@ -145,6 +145,13 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="face_dectec.cpp" />
+    <ClCompile Include="hand_pose.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="pose_deploy.prototxt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pose_iter_102000.caffemodel" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

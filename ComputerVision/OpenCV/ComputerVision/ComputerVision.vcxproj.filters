@@ -13,10 +13,26 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\hand">
+      <UniqueIdentifier>{eb46ae9a-f6c3-432e-bba4-932e7b710ac2}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="face_dectec.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="hand_pose.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="pose_deploy.prototxt">
+      <Filter>Source Files\hand</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="pose_iter_102000.caffemodel">
+      <Filter>Source Files\hand</Filter>
+    </None>
   </ItemGroup>
 </Project>
