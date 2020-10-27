@@ -1,4 +1,4 @@
-﻿/*using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,7 +11,6 @@ namespace ConsoleApp
         private static void Main(string[] args)
         {
             Console.WriteLine("Thead Vs Async/Await");
-
             var watch = new System.Diagnostics.Stopwatch();
             watch.Start();
 
@@ -29,7 +28,7 @@ namespace ConsoleApp
             watch.Stop();
             Console.WriteLine($"Execution Time: {watch.ElapsedMilliseconds} ms");
 
-            *//*List<int> list = new List<int> { 1, 2, 3, 4, 5 };
+            List<int> list = new List<int> { 1, 2, 3, 4, 5 };
 
             list.ForEach(i =>
             {
@@ -58,7 +57,7 @@ namespace ConsoleApp
             list.ForEach(i =>
             {
                 Console.WriteLine("index:" + list.IndexOf(i) + " - value: " + i);
-            });*//*
+            });
 
             Console.ReadKey();
         }
@@ -78,4 +77,3 @@ namespace ConsoleApp
         }
     }
 }
-*/
